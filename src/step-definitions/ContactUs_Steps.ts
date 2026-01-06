@@ -85,12 +85,12 @@ When('I type a first name {string} and a last Name {string}', async(firstName:st
     
 });
 
-When("I enter a email address {string} and a comment {string}", async(emailAddress:string,comment:string)=>{
+When('I enter a email address {string} and a comment {string}', async(emailAddress:string,comment:string)=>{
     await pageFixture.page.locator("//input[@name='email']").fill(emailAddress);
     await pageFixture.page.locator("//textarea[@name='message']").fill(comment);
-    await pageFixture.page.pause();
+    //await pageFixture.page.pause();
 });
 
-// Then("I should be presented with a header text {string}",async(message:string)=>{
+//  Then("I should be presented with a header text {string}",async(message:string)=>{
 
-// });
+//  });
