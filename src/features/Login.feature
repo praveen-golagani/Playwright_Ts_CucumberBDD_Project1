@@ -1,9 +1,11 @@
 Feature: webdriveruniversity.com - Login Page
 
-    Scenario Outline: Validate Login Page with valid and invalid credentials
+    Background: Pre conditions
         Given I navigate to webdriveruniversity homepage
         When I click on login portal button
         And I switch to the new browser tab
+
+    Scenario Outline: Validate Login Page with valid and invalid credentials
         And I enter a username '<userName>'
         And I enter a password '<password>'
         And  I click on the login button
