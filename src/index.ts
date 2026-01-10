@@ -44,6 +44,6 @@ exec(command, { encoding: 'utf-8' }, (error: Error | null, stdout: string) => {
     //check if there was an error during execution
     if (error) {
         //throw a new error with a simple msg 
-        throw new Error('💣💥Some automation test(s) have failed🧨💥 - Kindly Review 💥')
+        throw new Error('💣💥Some automation test(s) have failed💣💥 - Kindly Review')
     }
 });
