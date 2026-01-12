@@ -17,12 +17,6 @@ export class LoginPage extends BasePage{
     
     public async clickOnLoginButton():Promise<void>{
         
-        //Event listeners must be registered BEFORE the event occurs
-        //  this.page.on('dialog',async(alert)=>{
-        //     alertText = alert.message();
-        //     await this.page.waitForTimeout(2000);
-        //     await alert.accept();
-        // })
         await this.page.locator('button#login-button').click();
     }
 }
